@@ -250,7 +250,7 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color: red;
+  color: rgb(253, 171, 9);
   
 }
 .about .about-content .right p {
@@ -449,10 +449,10 @@ section .title::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 }
 .project .carousel .card:hover .box {
-  transform: scale(1.05);
+  transform: scale(1.05); 
 }
 .project .carousel .card .text {
   font-size: 25px;
