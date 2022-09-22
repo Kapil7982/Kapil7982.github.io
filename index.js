@@ -62,3 +62,5 @@ $(document).ready(function () {
     },
   });
 });
+
+new GitHubCalendar(".calendar", "Kapil7982", { responsive: true });

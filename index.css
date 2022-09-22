@@ -727,3 +727,60 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+
+
+
+/* Stats */
+.statisticsTitle > h1 {
+  font-weight: 700;
+  margin-top: 100px;
+  margin: auto;
+  position: relative;
+  width: fit-content;
+}
+
+.statisticsTitle > h1::after {
+  background-color: #506aff;
+  content: " ";
+  height: 20%;
+  position: absolute;
+  left: -5px;
+  top: 55%;
+  width: calc(100% + 10px);
+  z-index: -1;
+}
+
+.individualStat {
+  width: 140px;
+  text-align: center;
+}
+
+.individualStat > div:nth-child(1) {
+  margin: auto;
+  font-size: 28px;
+  font-weight: 600;
+  height: 130px;
+  width: 130px;
+  border: 10px solid #506aff;
+  border-radius: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat{
+  display: flex; align-items:center; justify-content:space-around; margin-top: 20px; margin-bottom: 20px;
+}
+
+.candy{
+  width: 95%; margin: auto; margin-top: 60px;
+}
+
+@media only screen and (max-width: 426px) {
+  .stat{
+    display: flex; align-items:center; justify-content:space-around; margin-top: 20px; margin-bottom: 20px; 
+  }
+  .candy{
+    width: 95%; margin: auto; margin-top: 60px;
+  }
+} 
