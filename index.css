@@ -768,19 +768,102 @@ footer span a:hover {
   align-items: center;
 }
 
-.stat{
-  display: flex; align-items:center; justify-content:space-around; margin-top: 20px; margin-bottom: 20px;
+/* statistics section*/
+
+.statisticsTitle > h2 {
+  font-weight: 700px;
+  margin-top: 400px;
+  position: relative;
+  width: fit-content;
+  text-align: center;  margin: auto; padding-top: 20px;
+  
+}
+.row1{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(1,1fr);
+  width: 85%;
+  justify-content:space-between;
+  margin:auto ; padding-top: 30px;
+  gap: 5px; 
+ 
 }
 
-.candy{
-  width: 95%; margin: auto; margin-top: 60px;
+.statisticsTitle > h1::after {
+  background-color: #506aff;
+  content: " ";
+  height: 20%;
+  position: absolute;
+  left: -5px;
+  top: 55%;
+  width: calc(100% + 10px);
+  z-index: -1; 
+  
 }
 
-@media only screen and (max-width: 426px) {
-  .stat{
-    display: flex; align-items:center; justify-content:space-around; margin-top: 20px; margin-bottom: 20px; 
+.individualStat {
+  width: 100%;
+  text-align: center;  margin-bottom: 80px; 
+  
+}
+
+.individualStat > div:nth-child(1) {
+  margin: auto;
+  font-size: 28px;
+  font-weight: 600;
+  height: 130px;
+  width: 130px;
+  border: 10px solid #506aff;
+  border-radius: 65px;
+  display: flex;
+  justify-content:center;
+  align-items: center; 
+}
+ @media all and (min-width:300px) and (max-width:650px) {
+  .row1{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
+      height: auto;
+      gap: 25px;
+      /* padding-right: 10px; */
   }
-  .candy{
-    width: 95%; margin: auto; margin-top: 60px;
+ }
+ @media all and (min-width:651px) and (max-width:950px) {
+  .row1{
+      
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,1fr);
+      height: auto;
+      margin: auto;
+      padding-left: 35px;
+      gap: 25px;
   }
-} 
+ }
+ @media all and (min-width:100px) and (max-width:299px) {
+  .row1{
+      display:grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(5,1fr);
+      height: auto;
+      /* border: 1px solid red; */
+
+      padding-left: 35px;
+      align-items: center;
+      margin: auto;
+      gap: 25px;
+  }
+ }
+ @media all and (min-width:951px) and (max-width:1500px) {
+  .row1{
+      
+      display:grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: repeat(1,1fr);
+      height: auto;
+      margin: auto;
+      padding-left: 60px;
+      gap: 25px;
+  }
+ }
