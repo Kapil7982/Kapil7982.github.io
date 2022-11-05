@@ -755,6 +755,10 @@ footer span a:hover {
   text-align: center;
 }
 
+.candy{
+  width: 80%; margin: auto;
+}
+
 .individualStat > div:nth-child(1) {
   margin: auto;
   font-size: 28px;
